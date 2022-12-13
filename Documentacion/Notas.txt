@@ -1,0 +1,2 @@
+- Las fechas de las materias se cargan manualmente (clases efectivas) entonces si es feriado no va a estar en la BBDD.
+- El salt es un método de aleatorizar la encriptacion para mayor seguridad. En este caso al almacenar la contraseña la almacenamos con su salt y la encriptamos con el algoritmo de encriptación de hash SHA-256.
