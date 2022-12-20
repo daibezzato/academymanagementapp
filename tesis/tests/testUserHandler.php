@@ -6,6 +6,13 @@ include_once "../UserHandler.php";
 $instancia = new UserHandler();
 $instancia->getConnection();
 
-$instancia->createUser();
+#$username = 'tiburoncin';
+#$password = 'uhahahpass';
+
+#$instancia->createUser($username, $password);
+
+#$instancia->disable_user(9);
+
+#$instancia->restore_user(9);
 
 ?>
