@@ -22,3 +22,5 @@
 #call create_group('alumnos', 'estudiantes del instituto');
 #call create_group('profesores', 'docentes del instituto');
 #Select * from isftdb.group;
+#call delete_group(1)
+#call restore_group(1)
