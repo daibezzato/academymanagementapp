@@ -1,10 +1,11 @@
 #########################################
 #USER#
 ########################################
-#call create_user('pepeelmasgrande', 'shouldcreate_userbestringwithsalthashed', 'jose', 'perez', '365895478', '2011-4-11', 'pepitoelmasfroso@gmail.com', 'farm');
-#call create_user('elagusturrito', 'unamejorpass', 'Agus', 'Sala', '365894478', '2011-4-23', 'elagusturrito@gmail.com', 'xbox');
+#call create_user('juancito', 'unacontrasenia','play');
+#call create_user('holisholis', 'unamejorpass','play');
+#call create_user_information(18,'ajore', 'bububu','35468974','1998-5-12', 'unemailrelindo@gmail.com');
 #SELECT * FROM isftdb.user;
-#create_careerSELECT * FROM isftdb.user_information;
+#SELECT * FROM isftdb.user_information;
 #DELETE FROM isftdb.user Where idUser = 12;
 #call delete_user(6)
 #call restore_user(6)
