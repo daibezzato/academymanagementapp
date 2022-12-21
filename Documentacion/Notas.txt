@@ -11,3 +11,20 @@ duplicar ! Hay que verificar eso y responder con err en casod e que sea duplicad
 - Para el nombre de los servicios de la api se aplica snake_case para el nombre del servicio y camelCase para el nombre de la variable.
 - Como updatedo las tablas intermedias? onda student_subject
 - deberia borrar el user information o eso lo hago cuando seteo el flag a null? Para mi no deberia ser eliminable esa info.
+- Tengo que hacer un getsubject by career por ejemplo? o se usa otro tipo de cosas. para obtenertodas las materias de una carrera.
+------------------------------------------------------------------------------------------
+ DUDAS
+--------------------------------------
+al user_group le hice solo el create porque despues para conseguir el resto de la info lo hago por join o no?
+le agrego una flag isDeleted a esto? o directamente un delete?
+---------------------------------------
+lo mismo me pasa con subject_professor
+-------------------------------------
+al student_subject le asigno un score solo con el update?
+------------------------------------
+a period solo le hice create y get nose si tiene sentido el update y el delete aca ...
+-------------------------------------
+Crud que faltan
+student_subject
+attendance
+security_access

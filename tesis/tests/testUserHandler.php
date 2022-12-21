@@ -4,12 +4,12 @@ include_once "../databaseConnection.php";
 include_once "../UserHandler.php";
 
 $instancia = new UserHandler();
-$instancia->getConnection();
+$instancia->get_connection();
 
 #$username = 'tiburoncin';
 #$password = 'uhahahpass';
 
-#$instancia->createUser($username, $password);
+#$instancia->create_user($username, $password);
 
 #$instancia->disable_user(9);
 

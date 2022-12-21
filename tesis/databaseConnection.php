@@ -18,7 +18,7 @@ class DatabaseConnection
         $this->connection = $connection;
         echo "Connection established successfully";
     }
-    public function getInstance()
+    public function get_instance()
     {
         return $this->connection;
     }

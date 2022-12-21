@@ -19,15 +19,15 @@ class UserHandler
 
     public function __construct()
     {
-        $this->connection = (new DatabaseConnection())->getInstance();
+        $this->connection = (new DatabaseConnection())->get_instance();
     }
 
-    public function getConnection()
+    public function get_connection()
     {
         return $this->connection;
     }
 
-    public function createUser(string $username, string $password) {
+    public function create_user(string $username, string $password) {
 
         $name = $this->getName(5);
         $surname = $this->getName(8);
@@ -35,8 +35,6 @@ class UserHandler
         $mail = "$name $surname @gmail.com";
 
         $sentencia = $this->connection->prepare("CALL create_user('$username','$password', '$name', '$surname', '$document', '2011-4-22', '$mail', 'play');");
-
-        // llamar al procedimiento almacenado
         $sentencia->execute();
     }
 

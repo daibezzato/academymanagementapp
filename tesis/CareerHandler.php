@@ -12,15 +12,15 @@ class CareerHandler
 
     public function __construct()
     {
-        $this->connection = (new DatabaseConnection())->getInstance();
+        $this->connection = (new DatabaseConnection())->get_instance();
     }
 
-    public function getConnection()
+    public function get_connection()
     {
         return $this->connection;
     }
 
-    public function create( string $name, string $description, string $resolution ) {
+    public function create_career( string $name, string $description, string $resolution ) {
         $sentencia = $this->connection->prepare("CALL create_career('$name','$description', '$resolution');");
         $sentencia->execute();
     }
@@ -34,5 +34,4 @@ class CareerHandler
         $sentencia = $this->connection->prepare("CALL restore_career($carrerId);");
         $sentencia->execute();
     }
-
 }

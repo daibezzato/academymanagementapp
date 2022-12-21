@@ -36,4 +36,9 @@
 #########################################
 #ATTENDANCE#
 ########################################
-
+#
+#########################################
+#ACTION#
+########################################
+#call create_action('cargar materias', 'usuario puede cargar materias')
+#call get_all_actions()

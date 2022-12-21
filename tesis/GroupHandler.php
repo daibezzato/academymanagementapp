@@ -12,7 +12,7 @@ class GroupHandler
 
     public function __construct()
     {
-        $this->connection = (new DatabaseConnection())->getInstance();
+        $this->connection = (new DatabaseConnection())->get_instance();
     }
 
     public function getConnection()
@@ -20,7 +20,7 @@ class GroupHandler
         return $this->connection;
     }
 
-    public function create( string $name, string $description ) {
+    public function create_group( string $name, string $description ) {
         $sentencia = $this->connection->prepare("CALL create_group('$name','$description');");
         $sentencia->execute();
     }
