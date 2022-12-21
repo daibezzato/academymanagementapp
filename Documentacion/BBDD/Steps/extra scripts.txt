@@ -1,0 +1,4 @@
+Added isDeleted flag to subject
+
+ALTER TABLE `isftdb`.`subject` 
+ADD COLUMN `isDeleted` TINYINT NULL DEFAULT 0 AFTER `career_idCareer`;

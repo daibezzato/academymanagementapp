@@ -1,0 +1,42 @@
+ActionHandler
++create_action(name string, descrip string)
++get_action(actionId int)
++get_all_actions()
++update_action(actionId int, name string, descrip string, isDeleted bool)
++delete_action(actionId int)
+---------------------------------------------------------------------------------------------------
+AttendanceHandler
++create_attendance(subjectId int, userId int, classDate date, attendance bool )
++get_attendance(attendanceId int)
++get_all_attendance()
++update_attendance(attendanceId int, subjectId int, userId int, classDate date, isPresent bool)
+---------------------------------------------------------------------------------------------------
+CareerHandler
++create_career(careerName string, description varchar(128), resolution varchar(45))
++get_career(careerId int)
++get_all_careers()
++update_career(careerId int,careerName string,descript string,resolution string,isDeleted bool)
++delete_career(careerId int)
+---------------------------------------------------------------------------------------------------
+
+
+UserHandler (done happy path)
++create_user(username:string, passwordHash:string, salt:string)
++get_user(userId:int)
++get_all_users()
++update_user(userId:int, username:string, passwordHash:string, salt:string, isDeleted:bool)
++delete_user(userId:int)
+---------------------------------------------------------------------------------------------------
+SubjectHandler
++update_subject(subjectId int, name string, careerId int, isDeleted bool)
+---------------------------------------------------------------------------------------------------
+UserInformationHandler
++get_all_users_information()
+---------------------------------------------------------------------------------------------------
+GroupHandler
++create_group(groupName string, description string)
++get_group(groupId int)
++get_all_groups()
++update_group(groupId int, groupName string, descript string, isDeleted bool)
++delete_group(groupId int)
+---------------------------------------------------------------------------------------------------
