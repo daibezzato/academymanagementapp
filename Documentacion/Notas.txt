@@ -9,3 +9,5 @@
 la segunda sentencia no se cumple hay keys como el dni y el mail qeu no se pueden 
 duplicar ! Hay que verificar eso y responder con err en casod e que sea duplicado
 - Para el nombre de los servicios de la api se aplica snake_case para el nombre del servicio y camelCase para el nombre de la variable.
+- Como updatedo las tablas intermedias? onda student_subject
+- deberia borrar el user information o eso lo hago cuando seteo el flag a null? Para mi no deberia ser eliminable esa info.

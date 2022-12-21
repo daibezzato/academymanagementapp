@@ -6,9 +6,8 @@
 #call create_user_information(18,'ajore', 'bububu','35468974','1998-5-12', 'unemailrelindo@gmail.com');
 #SELECT * FROM isftdb.user;
 #SELECT * FROM isftdb.user_information;
-#DELETE FROM isftdb.user Where idUser = 12;
 #call delete_user(6)
-#call restore_user(6)
+#call get_user_information(16)
 #########################################
 #CAREER#
 ########################################
@@ -17,6 +16,11 @@
 #call create_career('terapeutico', 'acompaniamos con carinio ', 'asdf-3333');
 #SELECT * FROM isftdb.career;
 #SELECT idCareer FROM isftdb.career where careerName = 'analista de sistemas'
+#call update_career(5,'emergencias en salud', 'curar sabiendo', 'asdf-3434', 0);
+#SELECT * FROM isftdb.career;
+#call get_all_careers()
+#call get_career(5)
+#call get_career(8)
 #########################################
 #GROUP#
 ########################################
@@ -28,3 +32,8 @@
 #########################################
 #SUBJECT#
 ########################################
+#call create_subject('matematica', 5)
+#########################################
+#ATTENDANCE#
+########################################
+
