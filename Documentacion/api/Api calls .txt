@@ -18,8 +18,25 @@ CareerHandler
 +update_career(careerId int,careerName string,descript string,resolution string,isDeleted bool)
 +delete_career(careerId int)
 ---------------------------------------------------------------------------------------------------
-
-
+GroupHandler
++create_group(groupName string, description string)
++get_group(groupId int)
++get_all_groups()
++update_group(groupId int, groupName string, descript string, isDeleted bool)
++delete_group(groupId int)
+---------------------------------------------------------------------------------------------------
+PeriodHandler
++create_period(description string, startDate date, endDate date)
++get_period(periodId int)
++update_period(periodId int, description string, startDate date, endDate date)
+---------------------------------------------------------------------------------------------------
+SecurityAccessHandler
++create_security_access(groupId int, actionId int)
++update_security_access` (groupId int, actionId int, isDeleted bool)
+---------------------------------------------------------------------------------------------------
+StudentSubjectHandler
++create_student_subject`(idPeriod int, idUser int, idSubject int)
+---------------------------------------------------------------------------------------------------
 UserHandler (done happy path)
 +create_user(username:string, passwordHash:string, salt:string)
 +get_user(userId:int)
@@ -28,15 +45,16 @@ UserHandler (done happy path)
 +delete_user(userId:int)
 ---------------------------------------------------------------------------------------------------
 SubjectHandler
++create_subject(name string, careerId int)
++get_subject(subjectId int)
++get_all_subjects()
 +update_subject(subjectId int, name string, careerId int, isDeleted bool)
++delete_subject(subjectId int)
+---------------------------------------------------------------------------------------------------
+SubjectProfessorHandler
++create_subject_professor(userId int, subjectId int, periodId int)
 ---------------------------------------------------------------------------------------------------
 UserInformationHandler
 +get_all_users_information()
 ---------------------------------------------------------------------------------------------------
-GroupHandler
-+create_group(groupName string, description string)
-+get_group(groupId int)
-+get_all_groups()
-+update_group(groupId int, groupName string, descript string, isDeleted bool)
-+delete_group(groupId int)
----------------------------------------------------------------------------------------------------
+

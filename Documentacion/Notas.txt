@@ -23,6 +23,7 @@ lo mismo me pasa con subject_professor
 al student_subject le asigno un score solo con el update? como le hago el update a student_subject? no le hice delete tampoco.
 ---------------------------------------------------------------------
 a period solo le hice create y get nose si tiene sentido el update y el delete aca ...
+en period por ejemplo no tengo un get all periods porque mno tiene sentido pero podria crear un stored procedure que me haga el get_periods_by_subject no?
 -------------------------------------------------------------------------
 que attendance tenga delete no tiene sentido.
 -------------------------------------------------------------------------
