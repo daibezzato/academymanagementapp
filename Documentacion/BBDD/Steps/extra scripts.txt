@@ -2,3 +2,8 @@ Added isDeleted flag to subject
 
 ALTER TABLE `isftdb`.`subject` 
 ADD COLUMN `isDeleted` TINYINT NULL DEFAULT 0 AFTER `career_idCareer`;
+-----------------------------------------------------------------------------------
+Added is deleted flag to user_group
+
+ALTER TABLE `isftdb`.`user_group` 
+ADD COLUMN `isDeleted` TINYINT NOT NULL DEFAULT 0 AFTER `user_idUser`;

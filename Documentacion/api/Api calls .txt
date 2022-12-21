@@ -12,7 +12,7 @@ AttendanceHandler
 +update_attendance(attendanceId int, subjectId int, userId int, classDate date, isPresent bool)
 ---------------------------------------------------------------------------------------------------
 CareerHandler
-+create_career(careerName string, description varchar(128), resolution varchar(45))
++create_career(careerName string, description string, resolution string)
 +get_career(careerId int)
 +get_all_careers()
 +update_career(careerId int,careerName string,descript string,resolution string,isDeleted bool)
@@ -37,13 +37,6 @@ SecurityAccessHandler
 StudentSubjectHandler
 +create_student_subject`(idPeriod int, idUser int, idSubject int)
 ---------------------------------------------------------------------------------------------------
-UserHandler (done happy path)
-+create_user(username:string, passwordHash:string, salt:string)
-+get_user(userId:int)
-+get_all_users()
-+update_user(userId:int, username:string, passwordHash:string, salt:string, isDeleted:bool)
-+delete_user(userId:int)
----------------------------------------------------------------------------------------------------
 SubjectHandler
 +create_subject(name string, careerId int)
 +get_subject(subjectId int)
@@ -54,7 +47,21 @@ SubjectHandler
 SubjectProfessorHandler
 +create_subject_professor(userId int, subjectId int, periodId int)
 ---------------------------------------------------------------------------------------------------
+UserHandler 
++create_user(username:string, passwordHash:string, salt:string)
++get_user(userId:int)
++get_all_users()
++update_user(userId:int, username:string, passwordHash:string, salt:string, isDeleted:bool)
++delete_user(userId:int)
+---------------------------------------------------------------------------------------------------
+UserGroupHandler 
++add_user_to_group(groupId int, userId int)
++remove_user_from_group(groupId int, userId int)
+---------------------------------------------------------------------------------------------------
 UserInformationHandler
++create_user_information(userId int,name string,surname string,documentNumber string, birthdate date, email string)
++get_user_information(userId int)
 +get_all_users_information()
++update_user_information(userId int, name string, surname string,documentNumber string, birthdate date, email string)
 ---------------------------------------------------------------------------------------------------
 
