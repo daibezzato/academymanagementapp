@@ -53,7 +53,10 @@ al hacer click esto llama a mi funcion
 del subject necesito elid
 me traigo todo el listado de alumnos de la materia 
 
-
+ #while ($row = mysqli_fetch_array($result)) {
+            #    echo "<br>";
+            #    echo $row[0]; 
+            #}
 
 
 ----------------------------

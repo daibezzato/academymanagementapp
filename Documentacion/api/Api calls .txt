@@ -36,8 +36,8 @@ SecurityAccessHandler
 ---------------------------------------------------------------------------------------------------
 StudentSubjectHandler
 +create_student_subject`(idPeriod int, idUser int, idSubject int)
-getsubjectsforstudent(userid)
-+`get_students_for_subject` (in subjectId int)
++getsubjectsforstudent(userid)
++`get_students_for_subject(subjectId int)
 crear el update para meter el score  idPeriod int, idUser int, idSubject int para el where y el update el score
 ---------------------------------------------------------------------------------------------------
 SubjectHandler
@@ -47,8 +47,8 @@ SubjectHandler
 +update_subject(subjectId int, name string, careerId int, isDeleted bool)
 +delete_subject(subjectId int)
 +crear funcion para obtener el profesor de la materia pasando un subjectid y un periodo
-+get attendanceinformationforsubject `get_attendance_information_for_subject` (in subjectId int)
-+ getstudentsforsubject get_students_for_subject`(in subjectId int)
++get_attendance_information_for_subject(subjectId int)
++get_students_for_subject(subjectId int)
 ---------------------------------------------------------------------------------------------------
 SubjectProfessorHandler
 +create_subject_professor(userId int, subjectId int, periodId int)
