@@ -1,12 +1,14 @@
 #########################################
 #USER#
 ########################################
+#call create_user('pedrito', 'unacontrasenia','play');
 #call create_user('juancito', 'unacontrasenia','play');
+
 #call create_user('holisholis', 'unamejorpass','play');
 #call create_user_information(18,'ajore', 'bububu','35468974','1998-5-12', 'unemailrelindo@gmail.com');
 #call create_user('pedritotrx', 'altapasspedrito','tree');
 #call get_all_users();
-#call create_user_information(19,'pedro', 'juarez','25458745','1998-8-25', 'abuelalalalala@gmail.com');
+#call create_user_information(20,'dsfgaf', 'fasdf','454566825','1998-8-25', '12dssafds@gmail.com');
 #call get_all_users();
 #call get_all_users_information();
 #call delete_user(6)
@@ -56,11 +58,11 @@
 #ATTENDANCE#
 ########################################
 #call create_attendance(10, 10, '1995-12-25', 'true')
-
 #########################################
 #ACTION#
 ########################################
 #call create_action('cargar materias', 'usuario puede cargar materias')
 #call get_all_actions()
-
+#######################################
+#call get_users_for_group(4)
 
