@@ -90,3 +90,4 @@
 #call create_attendance(2, 16, '2022-03-25', false );
 #call create_attendance(2, 16, '2022-04-15', true );
 #call get_attendance_information_for_subject(2);
+#call create_attendance(2, 17, '2022-03-18', false);

@@ -36,7 +36,7 @@ SecurityAccessHandler
 ---------------------------------------------------------------------------------------------------
 StudentSubjectHandler
 +create_student_subject`(idPeriod int, idUser int, idSubject int)
-+getsubjectsforstudent(userid)
++getsubjectsforstudent(userid int)
 +`get_students_for_subject(subjectId int)
 crear el update para meter el score  idPeriod int, idUser int, idSubject int para el where y el update el score
 ---------------------------------------------------------------------------------------------------

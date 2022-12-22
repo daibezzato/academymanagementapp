@@ -12,13 +12,11 @@ class DatabaseConnection {
             die("Failed ". mysqli_connect_error());
         }
         $this->connection = $connection;
-        echo "Connection established successfully";
+        echo "La conexion a la base de datos fue exitosa.";
     }
     public function get_instance()
     {
         return $this->connection;
     }
-
-
 } 
 ?>
