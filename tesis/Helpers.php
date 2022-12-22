@@ -1,5 +1,5 @@
 <?php
-class Helpers {
+class Helper {
 
     public function getName($n) {
 	    $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';

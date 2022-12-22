@@ -1,16 +1,12 @@
 <?php
 
-class DatabaseConnection
-{
+class DatabaseConnection {
     private $connection;
 
     public function __construct()
     {
-        $server_name = "localhost";
-        $user_name = "root";
-        $password = "admin";
-        $database = "isftdb";
-        $connection = mysqli_connect($server_name, $user_name, $password, $database);
+        require_once('env.php');
+        $connection = mysqli_connect($hostname_cone, $username_cone, $password_cone, $database_cone);
 
         if (!$connection) {
             die("Failed ". mysqli_connect_error());
@@ -22,5 +18,7 @@ class DatabaseConnection
     {
         return $this->connection;
     }
-};
+
+
+} 
 ?>

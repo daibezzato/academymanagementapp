@@ -7,8 +7,8 @@ ActionHandler
 ---------------------------------------------------------------------------------------------------
 AttendanceHandler
 +create_attendance(subjectId int, userId int, classDate string, isPresent bool )
-+get_attendance(attendanceId int)
-+get_all_attendance()
++get_attendance(attendanceId int) nio tiene sentido 
++get_all_attendance() no tiene sentido 
 +update_attendance(attendanceId int, subjectId int, userId int, classDate date, isPresent bool)
 ---------------------------------------------------------------------------------------------------
 CareerHandler
@@ -36,6 +36,9 @@ SecurityAccessHandler
 ---------------------------------------------------------------------------------------------------
 StudentSubjectHandler
 +create_student_subject`(idPeriod int, idUser int, idSubject int)
+getsubjectsforstudent(userid)
++`get_students_for_subject` (in subjectId int)
+crear el update para meter el score  idPeriod int, idUser int, idSubject int para el where y el update el score
 ---------------------------------------------------------------------------------------------------
 SubjectHandler
 +create_subject(name string, careerId int)
@@ -43,9 +46,13 @@ SubjectHandler
 +get_all_subjects()
 +update_subject(subjectId int, name string, careerId int, isDeleted bool)
 +delete_subject(subjectId int)
++crear funcion para obtener el profesor de la materia pasando un subjectid y un periodo
++get attendanceinformationforsubject `get_attendance_information_for_subject` (in subjectId int)
++ getstudentsforsubject get_students_for_subject`(in subjectId int)
 ---------------------------------------------------------------------------------------------------
 SubjectProfessorHandler
 +create_subject_professor(userId int, subjectId int, periodId int)
++crear una funcion que obtenga las materias de un profesor pasandole el userid
 ---------------------------------------------------------------------------------------------------
 UserHandler 
 +create_user(username:string, passwordHash:string, salt:string)
@@ -57,6 +64,7 @@ UserHandler
 UserGroupHandler 
 +add_user_to_group(groupId int, userId int)
 +remove_user_from_group(groupId int, userId int)
++get_users_for_group(groupId int)
 ---------------------------------------------------------------------------------------------------
 UserInformationHandler
 +create_user_information(userId int,name string,surname string,documentNumber string, birthdate date, email string)

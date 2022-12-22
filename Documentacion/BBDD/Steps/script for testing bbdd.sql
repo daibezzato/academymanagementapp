@@ -9,7 +9,7 @@
 #call create_user('pedritotrx', 'altapasspedrito','tree');
 #call get_all_users();
 #call create_user_information(20,'dsfgaf', 'fasdf','454566825','1998-8-25', '12dssafds@gmail.com');
-#call get_all_users();
+call get_all_users();
 #call get_all_users_information();
 #call delete_user(6)
 #call get_user_information(16)
@@ -65,4 +65,25 @@
 #call get_all_actions()
 #######################################
 #call get_users_for_group(4)
+#call add_user_to_group(3,16);
+#call add_user_to_group(3,17);
+#call add_user_to_group(4,18);
+#call add_user_to_group(4,19);
+#######################################
+#call create_period('primer cuatrimestre', '2022-03-12', '2022-07-12');
+#call create_period('segundo cuatrimestre', '2022-07-12', '2022-11-12');
+#call create_period('tercer cuatrimestre', '2022-11-12', '2022-12-12');
+#select * from period;
+#call get_all_subjects();
+#call create_student_subject(1, 16, 2);
+#call create_student_subject(1, 16, 3);
+#call create_student_subject(2, 16, 4);
+#call create_student_subject(1, 17, 2);
+#call create_student_subject(2, 17, 3);
+#call create_student_subject(3, 17, 4);
 
+#call get_students_for_subject(2);
+#call get_attendance_information_for_subject(2);
+#call create_attendance(2, 16, '2022-03-18', true );
+#call create_attendance(2, 16, '2022-03-25', false );
+#call create_attendance(2, 16, '2022-04-15', true );attendanceattendance
