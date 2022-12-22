@@ -1,12 +1,12 @@
 ActionHandler
-+create_action(name string, descrip string)
++create_action(name string, description string)
 +get_action(actionId int)
 +get_all_actions()
-+update_action(actionId int, name string, descrip string, isDeleted bool)
++update_action(actionId int, name string, description string, isDeleted bool)
 +delete_action(actionId int)
 ---------------------------------------------------------------------------------------------------
 AttendanceHandler
-+create_attendance(subjectId int, userId int, classDate date, attendance bool )
++create_attendance(subjectId int, userId int, classDate string, isPresent bool )
 +get_attendance(attendanceId int)
 +get_all_attendance()
 +update_attendance(attendanceId int, subjectId int, userId int, classDate date, isPresent bool)

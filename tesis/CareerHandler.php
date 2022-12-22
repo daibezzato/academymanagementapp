@@ -1,6 +1,6 @@
 <?php
 
-include_once "../databaseConnection.php";
+include_once "../DatabaseConnection.php";
 
 
 class CareerHandlerErrorTypes {

@@ -1,0 +1,9 @@
+<?php 
+include_once "../DatabaseConnection.php";
+include_once "../AttendanceHandler.php";
+
+$instancia = new AttendanceHandler();
+$instancia->get_connection();
+
+#$instancia->create_attendance(3, )
+?>

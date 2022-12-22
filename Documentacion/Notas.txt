@@ -38,8 +38,14 @@ security_access
 es la tabla intermedia entre grupos y acciones
 solo le hice get y update porque get es para obtenerlo y update para actualizarlo con el flag
 -------------------------------------------------------------------------
+a user_information no le puse delete porque me parece que el flag solo va en user.
 
-
+----------------------------
+IMPORTANTE
+---------------------------
 Porque se usa el $ en php?
-
+PHP no acepta el formato date poir lo cual voy a tener que hacerlo string y crear una evaluacion para que la date venga en formato correcto
 El create user me devuelve un user id con ese user id yo cargo la user information.
+User tiene que ser creado en una capa superior que haga los chequeos verdad? onda si el user puedo crearlo pero el user_information no, me haga el rollback y eso... que chequee que no exista el usuario y que lo pruebe blah blah 
+Se supone que el create user se va a llamar con un hash de la password que haya seleccionado el usaurio mas el salt
+
